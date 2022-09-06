@@ -127,5 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # ______________ Graylog _______________
-GRAYLOG_ENDPOINT = 'http://graylog.tm-dev.xyz:12199/gelf'
+GRAYLOG_ENDPOINT = 'https://graylog.tm-dev.xyz:12199/gelf'
 GRAYLOG_TIMEOUT = 0.25
