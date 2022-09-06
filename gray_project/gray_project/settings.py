@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t6t$wmhgct98-$pshprb53ho^&lnp@(w(-7e%$oy%ij+t2ma20'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://gray-log.herokuapp.com', 'gray-log.herokuapp.com', '*']
+ALLOWED_HOSTS = ['127.0.0.1', 'gray-log.herokuapp.com', '*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django_graylog.GraylogMiddleware',
